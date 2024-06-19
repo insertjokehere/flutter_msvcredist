@@ -1,7 +1,7 @@
 name: msvcredist
 description: "Helper plugin to include MSVC Runtime libraries in build output"
 version: 0.1.0
-homepage:
+homepage: https://github.com/insertjokehere/flutter_msvcredist
 
 environment:
   sdk: '>=3.3.1 <4.0.0'

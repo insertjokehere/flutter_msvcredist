@@ -13,6 +13,9 @@ This plugin does not include the MSVC runtime libraries themselves, it only copi
 * Add this plugin as a dependency in your `pubspec.yaml`:
 ```yaml
 dependencies:
-  msvcredist: ^0.1.0
+  msvcredist:
+    git:
+      url: https://github.com/insertjokehere/flutter_msvcredist.git
+      ref: main
 ```
 * Compile your application as normal, and distribute the resulting files according to preference.
