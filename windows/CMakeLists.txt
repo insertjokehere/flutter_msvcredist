@@ -59,9 +59,5 @@ set(msvcredist_bundled_libraries
 # Deply the actual MSVC redist libraries
 # Set the destination to the build directory
 set(CMAKE_INSTALL_SYSTEM_RUNTIME_DESTINATION "$<TARGET_FILE_DIR:${BINARY_NAME}>")
-# If we are building in debug mode, include the debug versions
-set(CMAKE_INSTALL_DEBUG_LIBRARIES BOOL "$<$<CONFIG:Debug>:1>$<$<CONFIG:Release>:0>")
-# _only_ include the debug versions when building in debug mode
-set(CMAKE_INSTALL_DEBUG_LIBRARIES_ONLY BOOL "$<$<CONFIG:Debug>:1>$<$<CONFIG:Release>:0>")
 # https://cmake.org/cmake/help/latest/module/InstallRequiredSystemLibraries.html
 include(InstallRequiredSystemLibraries)
